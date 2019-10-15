@@ -1,0 +1,48 @@
+.row{
+  @include clearfix;
+  &-gutters{
+      @include atMedium{
+        margin-right: -20px;
+      }
+  }
+  &-gutters>div{
+      @include atMedium{
+        padding-right: 20px;
+      }
+  }
+  @include atMedium{
+    .col-md-8{
+      width: 66.662%;
+      float: left;
+  }
+  .col-md-4{
+      width: 33.332%;
+      float: left;
+  }
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
+  .col-md-9 {
+    width: 75%;
+    float: left;
+  }
+  .col-md-6{
+    width: 50%;
+    float: left;
+  }
+  }
+  ul{
+    margin-top: 6px;
+    li{
+      list-style: none;
+      margin-bottom: 6px;
+    }
+  }
+  h2{
+    margin-top: 20px;
+  }
+  p{
+    margin-top: 6px;
+  }
+}

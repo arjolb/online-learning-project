@@ -1,0 +1,25 @@
+@mixin clearfix{
+  &::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin atSmall{
+  @media(min-width: 320px){
+      @content;
+  }
+}
+
+@mixin atMedium{
+  @media(min-width: 760px){
+      @content;
+  }
+}
+
+@mixin atLarge{
+  @media(min-width: 1010px){
+      @content;
+  }
+}

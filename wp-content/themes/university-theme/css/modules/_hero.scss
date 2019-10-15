@@ -1,0 +1,44 @@
+.hero{
+ padding: 8px 16px 0 16px;
+ margin-bottom: 50px;
+ position: relative;
+
+&__content{
+    position: relative;
+}
+
+
+ &__text{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    background: rgba(2, 2, 32, 0.6);
+   @include atMedium{
+      width: 100%;
+   }  
+     h1{
+        
+        padding-left: 10px;
+        padding-bottom: 6px;
+        font-size: 22px;
+        color: #fff;
+     }
+
+     h5{
+        padding-left: 10px;
+        padding-bottom: 6px;
+        color: #fff;
+     }
+ }
+
+ &__title{
+    padding-bottom: 8px;
+    border-bottom: 1px dotted;
+ }
+
+ &__page-content{
+    padding-top: 8px;
+    line-height: 1.6;
+   }
+
+}

@@ -1,0 +1,16 @@
+.site-header{
+  @include clearfix;
+  background: #333;
+  &__links{
+    float: left;
+    li{
+      float: left;
+      list-style-type: none;
+      padding: 10px 16px;
+      a{
+        color: #8d8d8d;
+        font-size: 14px;
+      }
+    }
+  }
+}

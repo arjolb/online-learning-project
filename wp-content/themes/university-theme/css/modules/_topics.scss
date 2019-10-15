@@ -1,0 +1,26 @@
+.topics{
+    margin-top: 30px;
+
+    a{
+        color: #33689a;
+    }
+    
+    &__category{
+        h1{
+            margin-bottom: 6px;
+        }
+
+        a{
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        &-sub{
+            li{
+                list-style-type: none;
+                padding-bottom: 6px;
+            }
+        }
+    }
+}

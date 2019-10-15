@@ -1,0 +1,106 @@
+.note{
+    transition: all .5s;
+    margin-bottom: 26px;
+    border-bottom: 1px dotted;
+    &:last-child{
+        padding-bottom: 0;
+        border: none;
+    }
+    &-remove{
+        display: none;
+    }
+
+    &-title-field{
+        width: 50%;
+        padding: 6px;
+        outline: none;
+        border: none;
+        color: #0D3B66;
+        margin-bottom: 10px;
+        @include atMedium{
+            width: 60%;
+        }
+    }
+
+    &-body-field{
+        resize: none;
+        width: 100%;
+        padding: 6px;
+        // outline: none;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    &-active-field {
+        border: 1px solid #DDD;
+    }
+}
+
+.edit-note{
+    background: #eee;
+    padding: 6px 9px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.delete-note{
+    background: #eee;
+    color: red;
+    padding: 6px 9px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.update-note{
+    visibility: hidden;
+    &__btn{
+        padding: 8px;
+        background: #2b4e6e;
+        color: #eee;
+        cursor: pointer;
+    }
+    &-visible{
+        visibility: visible;
+    }
+}
+
+.create-note{
+    margin-bottom: 30px;
+    background: #d2d3d3;
+    padding: 18px 6px;
+    &__heading{
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+    &__title{
+        display: block;
+        width: 100%;
+        padding: 10px 6px;
+        border: none;
+        outline: none;
+    }
+    &__content{
+        display: block;
+        width: 100%;
+        resize: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: none;
+        outline: none;
+        padding: 10px 6px;
+        height: 100px;
+    }
+    &__limit{
+        color: #c54646;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s;
+    }
+}
+
+.submit-note{
+    padding: 10px;
+    background: #c50202;
+    color: #fff;
+    cursor: pointer;
+}

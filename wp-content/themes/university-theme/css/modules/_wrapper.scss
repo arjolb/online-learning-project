@@ -1,0 +1,14 @@
+.wrapper{
+  max-width: 1080px;
+  // background-color: red;
+  padding: 0 20px;
+  margin: 0 auto;
+  @include clearfix;
+
+  img{
+    width: 70%;
+    @include atMedium{
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.generic-content{
+  &__border{
+    border: 1px solid #ebebeb;
+  }
+  &__border-right{
+    border-right: 1px solid #ebebeb;
+  }
+
+  &__title{
+    background: #f0f0f0;
+    padding: 8px 0 8px 6px;
+    border-bottom: 1px solid #ebebeb;
+    h3{
+        font-size: 16px;
+        color: #5f5f5f;
+        text-transform: capitalize;
+    }
+  }
+
+}
+
+.current-menu-item{
+  background: #d8d8d8;
+}

@@ -1,0 +1,73 @@
+.events{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    @include atMedium{
+        margin-top: 0;
+    }
+
+    &__month{
+        padding: 8px 0 8px 6px;
+        h1{
+            text-transform: uppercase;
+            color: #5f5f5f6e;
+            font-weight: 900;
+        }
+    }
+
+    &__info{
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        border-radius: 12px;
+        // padding: 2px;
+        background: #fafafa;
+
+        &-date{
+            background: rgb(235, 235, 233);
+            border-radius: 50%;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding: 4px;
+            margin-bottom: 8px;
+            @include atMedium{
+                margin-bottom: 0;
+                width: auto;
+            }
+        }
+
+
+        >div{
+            padding-top: 6px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ebebeb;
+
+            &:last-child{
+                border-bottom: none;
+            }
+
+            h4{
+                font-size: 12px;
+                color: #5f5f5f6e;
+                padding-left: 6px;
+                text-transform: uppercase;
+            }
+            h3{
+                font-size: 14px;
+                padding-bottom: 3px;
+                color: #5f5f5f;
+                
+                &:first-child{
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                &:nth-child(2){
+                    font-weight: 300;
+                }
+                &:last-child{
+                    color: #5f5f5f6e;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

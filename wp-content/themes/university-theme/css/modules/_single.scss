@@ -1,0 +1,88 @@
+.single{
+    // padding: 22px 0;
+    @include clearfix;
+    &__content{
+        padding: 22px 0;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    &__title{
+        color: #33689a;
+        padding-bottom: 6px;
+        border-bottom: 1px dotted;
+        h3{
+            padding-top: 8px;
+            span{
+                color: #333;
+            }
+        }
+    }
+    &__description{
+        padding-top: 22px;
+        line-height: 1.6;
+        &-professor{
+            line-height: 1.6;
+        }
+    }
+    &__banner{
+        padding-bottom: 22px;
+    }
+    &__lectures{
+        padding-top: 22px;
+        padding-bottom: 22px;
+        border-bottom: 1px dotted;
+        &:last-child{
+            border: none;
+        }
+        &-lecture{
+            margin-bottom: 22px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__chapter{
+        // padding-bottom: 22px;
+        padding-top: 22px;
+    }
+    &__lecture-title{
+        margin-bottom: 6px;
+    }
+    &__link{
+        float: left;
+        padding-top: 22px;
+    }
+    &__ratings{
+        float: right;
+        padding-top: 22px;
+        .fa-star{
+            color: #c2c2c2;
+        }
+    }
+    &__professor{
+        margin-top: 22px;
+    }
+    &__subjects{
+        padding-top: 22px;
+        float: left;
+    }
+    &__likes{
+        padding-top: 22px;
+        float: right;
+        cursor: pointer;
+        .fa{
+            &-heart{
+                color: #c2c2c2;
+                position: relative;
+                left: -4px;
+            }
+        }
+        &[data-exists="yes"] .fa-heart {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            visibility: visible;
+            opacity: 1;
+            color: red;
+        }
+    }
+}
